@@ -12,7 +12,6 @@ import { Contact } from './contact/Contact'
 
 function App() {
   /* const [count, setCount] = useState(0) */
-
   return (
     <HashRouter className="App">
       <Menu />

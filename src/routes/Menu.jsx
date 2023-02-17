@@ -11,7 +11,7 @@ const Menu = () => {
               className='a'
               key={routes.text}
               style={({ isActive }) => ({
-                color: isActive ? 'red' : 'blue',
+                color: isActive ? '#00a78e' : 'black',
               })}
               to={route.to}
             >
