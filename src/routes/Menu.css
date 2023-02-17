@@ -1,0 +1,13 @@
+.menu-nav {
+  background-color: darkcyan;
+  width: 100vw;
+}
+
+.menu-ul {
+  background-color: saddlebrown;
+  display: flex;
+}
+
+.menu-li {
+  background-color: #32d3;
+}
