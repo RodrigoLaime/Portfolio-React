@@ -1,20 +1,61 @@
+.div-container-jobs {
+  background-image: url('../../assets/wallhaven-kx82d6.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+
 .container-jobs {
-  background-color: saddlebrown;
-  height: 100vh;
   width: 100%;
-  max-width: 800px;
+  max-width: 960px;
+  margin: 0 auto;
+
 }
 
 .container-center-jobs {
+  width: 100%;
   list-style: none;
-  margin: 0;
   padding: 0;
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1rf));
+  grid-template-columns: repeat(auto-fit,
+      minmax(170px, 1fr));
+}
+
+.jobs-title {
+  padding: 20px;
+  text-align: left;
+}
+
+.jobs-title h2 {
+  font-size: 34px;
+  color: #2acfcf;
+}
+
+.jobs-title p {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
 }
 
 .jobs {
-  background-color: darkblue;
-  min-width: 280px;
+  background-color:white;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 1px;
+  text-align: left;
+  border-left: 4px solid #2acfcf;
+}
+
+.jobs ul {
+  display: flex;
+}
+
+.jobs ul li {
+  list-style: none;
+  font-size: 16px;
+}
+
+.jobs ul li a {
+  text-decoration: none;
 }

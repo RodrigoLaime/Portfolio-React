@@ -1,0 +1,28 @@
+.container-main-home {
+    background-color: darkcyan;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.container-home {
+    background-color: saddlebrown;
+    text-align: left;
+}
+
+.container-home h3 {
+    font-size: 24px;
+}
+
+.container-home h1 {
+    font-size: 8rem;
+}
+
+.container-home ul {
+    display: flex;
+    list-style: none;
+    background-color: salmon;
+}

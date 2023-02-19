@@ -1,8 +1,10 @@
 .menu-nav {
-  background-color: rgb(255, 255, 255);
+  background-color: #105454;
   width: 100vw;
   padding: 10px;
-  border-bottom: 2px solid #00a78e;
+  border-bottom: 2px solid #2acfcf;
+  position: absolute;
+  top: 0;
 }
 
 .menu-ul {
@@ -15,9 +17,14 @@
   margin: 0 10px;
   padding: 5px 10px;
   border-radius: 5px;
-  color: black;
+}
+.menu-li a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
 .menu-ul .menu-li .a:hover {
-  color: #00a78e;
+  color: #2acfcf;
 }

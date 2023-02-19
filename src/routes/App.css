@@ -7,6 +7,9 @@
   height: 100vh;
   overflow-x: hidden;
 }
+.App{
+  position: relative;
+}
 
 .logo {
   height: 6em;
