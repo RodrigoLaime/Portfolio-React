@@ -46,6 +46,19 @@
   text-align: left;
   border-left: 4px solid #2acfcf;
 }
+.jobs p{
+  width: 90px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 2px;
+  color: white;
+  background-color: #2acfcf;
+  padding: 5px 0;
+}
+.jobs p:active{
+  background-color: #2acfcf9d;
+}
 
 .jobs ul {
   display: flex;
