@@ -1,31 +1,32 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Menu.css'
+
+
 const Menu = () => {
-
   return (
-    <nav className='menu-nav'>
+    <nav className='menu-nav' >
 
-        <ul className='menu-ul'>
-          {routes.map(route => (
-            <div
-              key={route.text}
-              className='menu-li'>
-              <NavLink
-                className='a'
-                key={routes.text}
-                style={({ isActive }) => ({
-                  color: isActive ? '#2acfcf' : '',
-                })}
-                to={route.to}
-              >
-                {route.text}
-              </NavLink>
-            </div>
-          ))}
-        </ul>
+      <ul className='menu-ul'>
+        {routes.map(route => (
+          <div
+            key={route.text}
+            className='menu-li'>
+            <NavLink
+              className='a'
+              key={routes.text}
+              style={({ isActive }) => ({
+                color: isActive ? '#2acfcf' : '',
+              })}
+              to={route.to}
+            >
+              {route.text}
+            </NavLink>
+          </div>
+        ))}
+      </ul>
 
-    </nav>
+    </nav >
   )
 }
 

@@ -4,19 +4,14 @@
   border-bottom: 2px solid #2acfcf;
   position: absolute;
   top: 0;
-  background-image: linear-gradient(to bottom, #167171,#1d8f8f,#23aeae,#23aeae, #1d8f8f, #167171);
+  background-color: #1d8f8f;
 }
+
 /* #2acfcf */
 
 .desactivar {
   display: none;
 }
-
-/* .menu-movil {
-  background-image: linear-gradient(to bottom, #105454, #167171, #1d8f8f, #23aeae, #2acfcf);
-  width: 180px;
-  height: 100vh;
-} */
 
 .menu-ul {
   display: flex;
@@ -35,15 +30,9 @@
   text-decoration: none;
   font-weight: 400;
   transition: 0.3s ease;
+  font-weight: 500;
 }
 
 .menu-ul .menu-li .a:hover {
   color: #2acfcf;
-}
-
-@media (min-width: 412px) {
-  /* .menu-ul {
-    display: flex;
-    justify-content: right;
-  } */
 }

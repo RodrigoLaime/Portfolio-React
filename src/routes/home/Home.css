@@ -1,62 +1,66 @@
 .container-main-home {
-    background-image: url('../../assets/wallhaven-49pqld.jpg');
+  /*    background-image: url('../../assets/wallhaven-49pqld.jpg');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    
+    background-repeat: no-repeat; */
+  background-color: rgb(22, 95, 95);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+
 
 }
 
 .container-home {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container-home h3 {
-    font-size: 24px;
-    padding: 0 10px;
+  font-size: 24px;
+  padding: 0 10px;
 }
 
 .container-home h1 {
-    font-size: 7rem;
-    line-height: 105px;
+  font-size: 7rem;
+  line-height: 105px;
 }
-.line-color{
-    margin: 15px 10px;
-    height: 14px;
-    border-radius: 2px;
-    background-color:#2acfcf;
-   /*  background-color: #5c14ac; */
+
+.line-color {
+  margin: 15px 10px;
+  height: 14px;
+  border-radius: 2px;
+  background-color: #2acfcf;
+  /*  background-color: #5c14ac; */
 }
 
 .container-home ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
-.container-home ul li{
-    padding: 10px;
-    border-radius: 5px;
-    margin: 0px 10px;
-    width: 137px;
-    font-weight: 400;
-    background-color: rgba(247, 247, 247, 0.132);
+
+.container-home ul li {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px 10px;
+  width: 137px;
+  font-weight: 400;
+  background-color: rgba(247, 247, 247, 0.132);
 }
-.button-home{
-    color: white;
-    font-size: 16px;
-    border: none;
-    width: 100px;
-    padding: 8px;
-    margin: 20px 0px 0px 10px;
-    border-radius: 8px;
-    border-bottom: 3px solid white;
-    /* background-color: #5c14ac; */
-    background-color: #2acfcf;
+
+.button-home {
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 100px;
+  padding: 8px;
+  margin: 20px 0px 0px 10px;
+  border-radius: 8px;
+  border-bottom: 3px solid white;
+  /* background-color: #5c14ac; */
+  background-color: #2acfcf;
 }

@@ -14,97 +14,79 @@ trabajos.push({
   project: 'Proyect: google clone ligth',
   tools: 'Used Tools: HTML5 and CSS',
   key: 2,
-  to: {
-    github: 'fdfd',
-    image: 'sdsss',
-    job: 'ffdfd',
-  }
+  github: 'fdfd',
+  image: 'sdsss',
+  job: 'ffdfd',
 })
 trabajos.push({
   contact: 'Contact me',
   project: 'Proyect: google clone ligth',
   tools: 'Used Tools: HTML5 and CSS',
   key: 3,
-  to: {
-    github: 'xcv',
-    image: 'bfs',
-    job: 'iyl',
-  }
+  github: 'xcv',
+  image: 'bfs',
+  job: 'iyl',
 })
 trabajos.push({
   contact: 'Contact me',
   project: 'Proyect: google clone ligth',
   tools: 'Used Tools: HTML5 and CSS',
   key: 4,
-  to: {
-    github: 'thh',
-    image: 'rrr',
-    job: 'ttt',
-  }
+  github: 'thh',
+  image: 'rrr',
+  job: 'ttt',
 })
 trabajos.push({
   contact: 'Contact me',
   project: 'Proyect: google clone ligth',
   tools: 'Used Tools: HTML5 and CSS',
   key: 5,
-  to: {
-    github: 'ggg',
-    image: '76y',
-    job: 'hy6',
-  }
+  github: 'ggg',
+  image: '76y',
+  job: 'hy6',
 })
 trabajos.push({
   contact: 'Contact me',
   project: 'Proyect: google clone ligth',
   tools: 'Used Tools: HTML5 and CSS',
   key: 6,
-  to: {
-    github: '5etg',
-    image: 'ther',
-    job: 'vvrr',
-  }
+  github: '5etg',
+  image: 'ther',
+  job: 'vvrr',
 })
 trabajos.push({
   contact: 'Contact me',
   project: 'Proyect: google clone ligth',
   tools: 'Used Tools: HTML5 and CSS',
   key: 7,
-  to: {
-    github: '5etg',
-    image: 'ther',
-    job: 'vvrr',
-  }
+  github: '5etg',
+  image: 'ther',
+  job: 'vvrr',
 })
 trabajos.push({
-    contact: 'Contact me',
-    project: 'Proyect: google clone ligth',
-    tools: 'Used Tools: HTML5 and CSS',
-    key: 8,
-    to: {
-      github: '5etg',
-      image: 'ther',
-      job: 'vvrr',
-    }
-  })
-  trabajos.push({
-    contact: 'Contact me',
-    project: 'Proyect: google clone ligth',
-    tools: 'Used Tools: HTML5 and CSS',
-    key: 9,
-    to: {
-      github: '5etg',
-      image: 'ther',
-      job: 'vvrr',
-    }
-  })
-  trabajos.push({
-    contact: 'Contact me',
-    project: 'Proyect: google clone ligth',
-    tools: 'Used Tools: HTML5 and CSS',
-    key: 10,
-    to: {
-      github: '5etg',
-      image: 'ther',
-      job: 'vvrr',
-    }
-  })
+  contact: 'Contact me',
+  project: 'Proyect: google clone ligth',
+  tools: 'Used Tools: HTML5 and CSS',
+  key: 8,
+  github: '5etg',
+  image: 'ther',
+  job: 'vvrr',
+})
+trabajos.push({
+  contact: 'Contact me',
+  project: 'Proyect: google clone ligth',
+  tools: 'Used Tools: HTML5 and CSS',
+  key: 9,
+  github: '5etg',
+  image: 'ther',
+  job: 'vvrr',
+})
+trabajos.push({
+  contact: 'Contact me',
+  project: 'Proyect: google clone ligth',
+  tools: 'Used Tools: HTML5 and CSS',
+  key: 10,
+  github: '5etg',
+  image: 'ther',
+  job: 'vvrr',
+})
