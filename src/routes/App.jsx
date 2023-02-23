@@ -3,7 +3,7 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import React from 'react'
 import './App.css'
-import { Menu } from './Menu'
+import { Menu } from './menu/Menu'
 import { Home } from './home/Home'
 import { About } from './about/About'
 import { Jobs } from './jobs/Jobs'
