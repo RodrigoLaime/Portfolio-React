@@ -8,21 +8,38 @@
 
 /* #2acfcf */
 
-.activar {
-  display: none;
-}
 
 /* NAV MOVIL */
+.icon-menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
 .menu-nav-movil {
-  /*   background-color: #065b64; */
   width: 100vw;
 }
 
 .container-menu-movil {
-  /*   background-color: #00ffff; */
   width: 100%;
-  display: flex;
+  position: absolute;
+  left: -200px;
+  transition: all .5s ease;
 }
+
+.container-menu-movil ul {
+  padding-top: 40px;
+}
+
+.activar {
+  transform: translate(200px, 0);
+}
+
 
 .container-menu-movil ul {
   width: 180px;
@@ -38,7 +55,7 @@
 }
 
 .container-menu-movil ul h4 {
-  padding: 20px 20px 30px 20px;
+  padding: 20px 20px 30px 50px;
   color: white;
   text-align: left;
   font-size: 20px;
@@ -54,6 +71,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
 
 .container-menu-movil ul .menu-li-movil {
   /*  background-color: darkblue;

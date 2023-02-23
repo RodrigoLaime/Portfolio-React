@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Menu.css'
 
@@ -23,16 +23,19 @@ routes.push({
 
 const Menu = () => {
 
-  const [cliket, setCliket] = useState(false);
+
   const handleClick = () => {
-    setCliket(!cliket);
+    const navM = document.getElementById('navM');
+
+    navM.classList.toggle('activar')
   }
+
 
 
   return (
     <div className='container-nav'>
       <nav className='menu-nav '>
-        <h4 className='menu-h4'> <span> RODRY </span> <br /> GO</h4>
+        <h4 className='menu-h4'> <span> RODRY</span>GO</h4>
         <ul className='menu-ul'>
           {routes.map(route => (
             <div
@@ -54,11 +57,11 @@ const Menu = () => {
 
       </nav >
 
-      <nav className='menu-nav-movil activar'>
+      <nav className='menu-nav-movil'>
         <button
-          /*  handleClick={handleClick} */
+          onClick={handleClick}
           className='icon-menu'><i class="fa-solid fa-bars-staggered"></i></button>
-        <div className='container-menu-movil activar' >
+        <div id="navM" className='container-menu-movil activar' >
           <ul>
             <h4 className='menu-h4'> <span> RODRI</span>GO</h4>
             {routes.map(route => (
@@ -85,7 +88,7 @@ const Menu = () => {
           }
         </div>
       </nav>
-    </div>
+    </div >
   )
 }
 
