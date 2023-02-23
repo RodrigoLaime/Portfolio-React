@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Menu.css'
 
@@ -20,30 +20,72 @@ routes.push({
   text: 'Contact'
 })
 
-const Menu = () => {
-  return (
-    <nav className='menu-nav' >
-      <h4 className='menu-h4'>DiseñoUX</h4>
-      <ul className='menu-ul'>
-        {routes.map(route => (
-          <div
-            key={route.text}
-            className='menu-li'>
-            <NavLink
-              className='a'
-              key={routes.text}
-              style={({ isActive }) => ({
-                color: isActive ? '#2acfcf' : '',
-              })}
-              to={route.to}
-            >
-              {route.text}
-            </NavLink>
-          </div>
-        ))}
-      </ul>
 
-    </nav >
+const Menu = () => {
+
+  const [cliket, setCliket] = useState(false);
+  const handleClick = () => {
+    setCliket(!cliket);
+  }
+
+
+  return (
+    <div className='container-nav'>
+      <nav className='menu-nav '>
+        <h4 className='menu-h4'> <span> RODRY </span> <br /> GO</h4>
+        <ul className='menu-ul'>
+          {routes.map(route => (
+            <div
+              key={route.text}
+              className='menu-li'>
+              <NavLink
+                className='a'
+                key={routes.text}
+                style={({ isActive }) => ({
+                  color: isActive ? ' #ffffffa2' : '',
+                })}
+                to={route.to}
+              >
+                {route.text}
+              </NavLink>
+            </div>
+          ))}
+        </ul>
+
+      </nav >
+
+      <nav className='menu-nav-movil activar'>
+        <button
+          /*  handleClick={handleClick} */
+          className='icon-menu'><i class="fa-solid fa-bars-staggered"></i></button>
+        <div className='container-menu-movil activar' >
+          <ul>
+            <h4 className='menu-h4'> <span> RODRI</span>GO</h4>
+            {routes.map(route => (
+              <div
+                key={route.text}
+                className='menu-li-movil'>
+                <NavLink
+                  className='a-movil'
+                  key={routes.text}
+                  style={({ isActive }) => ({
+                    color: isActive ? ' #ffffffa2' : '',
+                  })}
+                  to={route.to}
+                >
+                  {route.text}
+                </NavLink>
+              </div>
+            ))}
+          </ul>
+          {
+            () => (
+              <div className='bacio-nav' isActive></div>
+            )
+          }
+        </div>
+      </nav>
+    </div>
   )
 }
 
