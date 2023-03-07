@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Menu.css'
 
@@ -23,47 +23,49 @@ routes.push({
 
 const Menu = () => {
 
-
   const handleClick = () => {
     const navM = document.getElementById('navM');
 
-    navM.classList.toggle('activar')
+    navM.classList.toggle('desplazar')
   }
-
-
 
   return (
     <div className='container-nav'>
       <nav className='menu-nav '>
-        <h4 className='menu-h4'> <span> RODRY</span>GO</h4>
-        <ul className='menu-ul'>
-          {routes.map(route => (
-            <div
-              key={route.text}
-              className='menu-li'>
-              <NavLink
-                className='a'
-                key={routes.text}
-                style={({ isActive }) => ({
-                  color: isActive ? ' #ffffffa2' : '',
-                })}
-                to={route.to}
-              >
-                {route.text}
-              </NavLink>
-            </div>
-          ))}
-        </ul>
+        <h4 className='menu-h4'> <span> Portafolio</span> | Rodrigo</h4>
+        <button
+          onClick={handleClick}
+          className='icon-menu'><i className="fa-solid fa-bars-staggered"></i>
+        </button>
+
+
+
+        <section className='menu-desktop'>
+          <ul className='menu-ul'>
+            {routes.map(route => (
+              <div
+                key={route.text}
+                className='menu-li'>
+                <NavLink
+                  className='a'
+                  key={routes.text}
+                  style={({ isActive }) => ({
+                    color: isActive ? ' #ffffffa2' : '',
+                  })}
+                  to={route.to}
+                >
+                  {route.text}
+                </NavLink >
+              </div >
+            ))}
+          </ul >
+        </section>
 
       </nav >
 
-      <nav className='menu-nav-movil'>
-        <button
-          onClick={handleClick}
-          className='icon-menu'><i class="fa-solid fa-bars-staggered"></i></button>
-        <div id="navM" className='container-menu-movil activar' >
+      <section id="navM" className='container-menu-movil' >
+        <article className='container-movil'>
           <ul>
-            <h4 className='menu-h4'> <span> RODRI</span>GO</h4>
             {routes.map(route => (
               <div
                 key={route.text}
@@ -80,37 +82,19 @@ const Menu = () => {
                 </NavLink>
               </div>
             ))}
+            <li className='follow'>
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </li>
           </ul>
-          {
-            () => (
-              <div className='bacio-nav' isActive></div>
-            )
-          }
-        </div>
-      </nav>
+        </article>
+      </section>
+
     </div >
   )
 }
 
-
-
-/* function s() {
-  return (
-    <div
-      key={route.text}
-      className='menu-li'>
-      <NavLink
-        className='a'
-        key={routes.text}
-        style={({ isActive }) => ({
-          color: isActive ? '#2acfcf' : '',
-        })}
-        to={route.to}
-      >
-        {route.text}
-      </NavLink>
-    </div>
-  )
-} */
 
 export { Menu }

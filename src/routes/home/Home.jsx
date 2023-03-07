@@ -22,7 +22,11 @@ const Home = () => {
           <button
             onClick={navContact}
             className='button-home'
-          >seguir</button>
+          >click here</button>
+
+        </section>
+        <section className='conatiner-home-left'>
+
         </section>
       </main>
     </>
