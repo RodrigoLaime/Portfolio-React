@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Menu.css'
+import './menu-icon.css'
 
 const routes = [];
 routes.push({
@@ -28,6 +29,10 @@ const Menu = () => {
 
     navM.classList.toggle('desplazar')
   }
+  const click = () => {
+    const menu1 = document.getElementById('menu1')
+    menu1.classList.toggle('openmenu1');
+  }
 
   return (
     <div className='container-nav'>
@@ -38,7 +43,15 @@ const Menu = () => {
           className='icon-menu'><i className="fa-solid fa-bars-staggered"></i>
         </button>
 
-
+        <div className='container-icon-menu'>
+          <div onClick={click} className='menu1' id='menu1'>
+            <div>
+              <span className='line1'></span>
+              <span className='line2'></span>
+              <span className='line3'></span>
+            </div>
+          </div>
+        </div>
 
         <section className='menu-desktop'>
           <ul className='menu-ul'>

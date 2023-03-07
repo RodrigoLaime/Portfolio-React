@@ -34,13 +34,15 @@ html {
 .menu1 .line-1 {
   width: 50%;
   transform: translate(-100%, -50%);
+  transform-origin: 0 0;
 }
 
-.menu1 .line-2 {
+.menu1 .line-3 {
   width: 50%;
   left: auto;
   right: 0;
   transform: translate(0, 40%);
+  transform-origin: 100% 0;
 }
 
 .openmenu1 .line1 {
