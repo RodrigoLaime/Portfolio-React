@@ -22,14 +22,10 @@
   position: relative;
   z-index: 1;
 }
-
-/* .menu-nav .icon-menu {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 18px;
-  margin: 0 30px;
+/* .scrNav{
+  background-color: rgb(0, 0, 0);
 } */
+
 
 .menu-nav .menu-h4 {
   margin: 10px 30px;
