@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './Menu.css'
 import './menu-icon.css'
@@ -24,6 +24,18 @@ routes.push({
 
 const Menu = () => {
 
+  const [scrollnav, setScrollnav] = useState(false);
+
+  const changeScroll = () => {
+    /* console.log(window.scrollY) */
+    if(window.screenY >=80){
+      setScrollnav(true)
+    } else {
+      setScrollnav(false)
+    }
+  }
+  window.addEventListener('scroll', changeScroll);
+
   const handleClick = () => {
     const navM = document.getElementById('navM');
 
@@ -38,12 +50,8 @@ const Menu = () => {
     <div className='container-nav'>
       <nav className='menu-nav '>
         <h4 className='menu-h4'> <span> Portafolio</span> | Rodrigo</h4>
-        <button
-          onClick={handleClick}
-          className='icon-menu'><i className="fa-solid fa-bars-staggered"></i>
-        </button>
 
-        <div className='container-icon-menu'>
+        <div className='container-icon-menu' onClick={handleClick}>
           <div onClick={click} className='menu1' id='menu1'>
             <div>
               <span className='line1'></span>
@@ -96,10 +104,10 @@ const Menu = () => {
               </div>
             ))}
             <li className='follow'>
-              <a href=""><i class="fa-solid fa-envelope"></i></a>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i className="fa-solid fa-envelope"></i></a>
+              <a href=""><i className="fa-brands fa-twitter"></i></a>
+              <a href=""><i className="fa-brands fa-linkedin-in"></i></a>
+              <a href=""><i className="fa-brands fa-github"></i></a>
             </li>
           </ul>
         </article>

@@ -23,13 +23,13 @@
   z-index: 1;
 }
 
-.menu-nav .icon-menu {
+/* .menu-nav .icon-menu {
   background-color: transparent;
   border: none;
   color: white;
   font-size: 18px;
   margin: 0 30px;
-}
+} */
 
 .menu-nav .menu-h4 {
   margin: 10px 30px;
@@ -110,10 +110,10 @@
     backdrop-filter: blur(20px);
   }
 
-  .icon-menu {
+ /*  .icon-menu {
     display: none;
   }
-
+ */
   /*   .menu-nav {
     left: calc(50% - 480px);
   } */
