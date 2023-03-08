@@ -28,7 +28,7 @@ const Menu = () => {
 
   const changeScroll = () => {
     console.log(window.scrollY)
-    if(window.screenY >=80){
+    if (window.screenY >= 80) {
       setScrollnav(true)
     } else {
       setScrollnav(false)
@@ -45,11 +45,11 @@ const Menu = () => {
     const menu1 = document.getElementById('menu1')
     menu1.classList.toggle('openmenu1');
   }
-/* <nav className={scrollnav ? 'menu-nav scrNav' : 'menu-nav'}> */
+  /* <nav className={scrollnav ? 'menu-nav scrNav' : 'menu-nav'}> */
   return (
     <div className='container-nav'>
       <nav className='menu-nav'>
-        <h4 className='menu-h4'> <span> Portfolio</span> | Rodrigo</h4>
+        <h4 className='menu-h4'> <span> PORTFOLIO</span> | Rodrigo</h4>
 
         <div className='container-icon-menu' onClick={handleClick}>
           <div onClick={click} className='menu1' id='menu1'>

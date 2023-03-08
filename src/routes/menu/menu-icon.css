@@ -1,9 +1,8 @@
-
 .menu1 {
   /* width: 200px;
   height: 200px; */
- /*  margin: 10px; */
-/*   background-image: linear-gradient(to right, saddlebrown, rgb(149, 136, 127));
+  /*  margin: 10px; */
+  /*   background-image: linear-gradient(to right, saddlebrown, rgb(149, 136, 127));
   border-radius: 5px; */
   cursor: pointer;
 }
@@ -11,7 +10,7 @@
 .menu1 div {
   width: 20px;
   height: 20px;
-/*   margin: 50px; */
+  /*   margin: 50px; */
   position: relative;
   margin-right: 30px;
 }
@@ -52,11 +51,11 @@
 }
 
 .openmenu1 .line2 {
-  transform: translate(-48%, -25%) rotate(45deg);
+  transform: translate(-45%, -25%) rotate(45deg);
 }
 
 @media (min-width: 575px) {
-  .container-icon-menu{
+  .container-icon-menu {
     display: none;
   }
 }
