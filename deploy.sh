@@ -15,3 +15,5 @@ git commit -m 'deploy'
 
 # fi you deploying to https://<USERNAME>.github.<REPO>
 # git push -f git@github.com:RodrigoLaime/Portfolio-React.git main:gh-pages
+
+cd .

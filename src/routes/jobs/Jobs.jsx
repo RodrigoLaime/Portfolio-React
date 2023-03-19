@@ -10,7 +10,6 @@ const Jobs = () => {
   };
 
   return (
-    <>
       <div className='div-container-jobs'>
         <section className='container-jobs'>
           <div className='jobs-title'>
@@ -47,7 +46,6 @@ const Jobs = () => {
           </div>
         </section>
       </div>
-    </>
   )
 }
 
