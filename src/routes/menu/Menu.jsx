@@ -49,7 +49,7 @@ const Menu = () => {
   return (
     <div className='container-nav'>
       <nav className='menu-nav'>
-        <h4 className='menu-h4'> <span> PORTFOLIO</span> | Rodrigo</h4>
+        <h4 className='menu-h4'> <span> PORTFOLIO</span> | RODRIGO</h4>
 
         <div className='container-icon-menu' onClick={handleClick}>
           <div onClick={click} className='menu1' id='menu1'>
@@ -71,7 +71,7 @@ const Menu = () => {
                   className='a'
                   key={routes.text}
                   style={({ isActive }) => ({
-                    color: isActive ? ' #ffffffa2' : '',
+                    color: isActive ? ' #fffffaa2' : '',
                   })}
                   to={route.to}
                 >
