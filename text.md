@@ -21,16 +21,10 @@ npm i gh-pages
 
 
 
+<!-- https://www.youtube.com/watch?v=JLfBo4p9ANw&ab_channel=EasyTutorials -->
 
 
 
-
--swc
-
-
-# ##################################### packacage
-    /* "build": "vite build",
-    "preview": "vite preview", */
 # ##################################### archivo deploy.sh
 #!usr/bin/env sh
 # abort on errors
