@@ -1,12 +1,12 @@
 {
+  "homepage": "https://RodrigoLaime.github.io/Portfolio-React",
   "name": "portfolio-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "preview": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
